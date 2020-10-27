@@ -1,0 +1,1 @@
+python -m grpc_tools.protoc object_detection/protos/*.proto --proto_path=. --python_out=.

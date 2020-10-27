@@ -30,6 +30,9 @@ from object_detection.utils import shape_utils
 from object_detection.utils import tf_version
 # pylint: disable=g-import-not-at-top
 if tf_version.is_tf2():
+  import os
+  import sys
+  sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
   from official.vision.image_classification.efficientnet import efficientnet_model
 
 _EFFICIENTNET_LEVEL_ENDPOINTS = {

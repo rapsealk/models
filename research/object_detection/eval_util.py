@@ -26,6 +26,7 @@ import numpy as np
 from six.moves import range
 import tensorflow.compat.v1 as tf
 
+# import tensorflow.compat.v1.slim as slim
 import tf_slim as slim
 
 from object_detection.core import box_list
